@@ -8,9 +8,7 @@ body {
 .container {
 	margin: 20px;
 	padding: 20px;
-    background-color: white;
     border: 20px;
-    border-color: silver;
 }
 
 .search_page {
@@ -18,21 +16,15 @@ body {
 	margin: auto;
 	height: 200px;
 	width: 50%;
-	border: 2px solid green;
 }
 
 .boxes {
 	display: inline-block;
-	border: 2px solid green;
 }
 
 h1 {
 	font-size: 5em;
 	display: inline-block;
-}
-
-a {
-	font-size: 3em;
 }
 
 p {
