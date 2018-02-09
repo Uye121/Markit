@@ -13,32 +13,34 @@ body {
     border-color: silver;
 }
 
-.frequent {
-	padding-top: 30px;
-	padding-bottom: 500px;
-	border: 2em;
-	color: hotpink;
-	background-color: lightblue;
+.search_page {
+	line-height: 200px;
+	margin: auto;
+	height: 200px;
+	width: 50%;
+	border: 2px solid green;
 }
 
-.Search, .Scan {
-	padding: 20px;
-	margin: 10px;
-	border-color: silver;
-	border: 10px;
-	text-align: block;
+.boxes {
+	display: inline-block;
+	border: 2px solid green;
 }
 
-h3 {
-
-	font-size: 3em;
+h1 {
+	font-size: 5em;
+	display: inline-block;
 }
 
 a {
-	font-size: 1em;
+	font-size: 3em;
+}
+
+p {
+
+	font-size: 3em;
 }
 
 span {
 	font-size: 3em;
-	color: red;
+	margin-top: 10px;
 }
