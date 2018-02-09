@@ -10,15 +10,13 @@ body {
 	padding: 20px;
     background-color: white;
     border: 20px;
-    border-color: silver;
 }
 
 .Search, .Scan {
 	padding: 20px;
 	margin: 10px;
-	border-color: silver;
 	border: 10px;
-	text-align: block;
+    text-align: block;
 }
 
 a {
@@ -27,5 +25,4 @@ a {
 
 span {
 	font-size: 3em;
-	color: red;
 }
