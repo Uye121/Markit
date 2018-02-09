@@ -1,0 +1,44 @@
+body {
+	border: 2em;
+	padding: 20px;
+	text-align: center;
+	background-color: grey;
+}
+
+.container {
+	margin: 20px;
+	padding: 20px;
+    background-color: white;
+    border: 20px;
+    border-color: silver;
+}
+
+.frequent {
+	padding-top: 30px;
+	padding-bottom: 500px;
+	border: 2em;
+	color: hotpink;
+	background-color: lightblue;
+}
+
+.Search, .Scan {
+	padding: 20px;
+	margin: 10px;
+	border-color: silver;
+	border: 10px;
+	text-align: block;
+}
+
+h3 {
+
+	font-size: 3em;
+}
+
+a {
+	font-size: 1em;
+}
+
+span {
+	font-size: 3em;
+	color: red;
+}
