@@ -1,6 +1,6 @@
 
 /*
- * GET search page.
+ * GET scan page.
  */
 
 exports.view = function(req, res){
