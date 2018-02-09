@@ -19,6 +19,7 @@ body {
 }
 
 .boxes {
+	margin: 100px;
 	display: inline-block;
 }
 
