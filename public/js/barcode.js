@@ -157,6 +157,7 @@ Quagga.init({
 		);
 	// Start the live stream scanner when the modal opens
 	$('#livestream_scanner').on('shown.bs.modal', function (e) {
+        console.log("stuff");
 		Quagga.init(
 			liveStreamConfig, 
 			function(err) {
@@ -222,3 +223,5 @@ Quagga.init({
 		}
 	});
 })
+
+var modal = document.getElementById('modal');
