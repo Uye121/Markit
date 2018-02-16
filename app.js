@@ -15,6 +15,7 @@ var search = require('./routes/search');
 var scan = require('./routes/scan');
 var review = require('./routes/review');
 var search_result = require('./routes/search_result');
+var log_in = require('./routes/log_in');
 
 var app = express();
 
@@ -38,13 +39,14 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/index', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/search', search.view);
 app.get('/scan', scan.view);
 app.get('/review', review.view);
 app.get('/search_result', search_result.view);
+app.get('/', log_in.view)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
