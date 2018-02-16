@@ -7,33 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/search_style.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<div class="container">
-		<div class="home">
-        	<a href="/">
-        	<h1></h1>
-        	</a>
-        	<h1>SEARCH BY NAME</h1>
-    	</div>
-        <div class="search_result">
-        	<a href="search_result">
-        	<span>Tap To Search</span>
-        	</a>
-        </div>
-        <div class="popular">
-            {{#each list}}
-                <p>{{name}}</p>
-                <hr>
-            {{/each}}
-        	<span>Popular brands ...</span>
-        	<div>
-        		<p class="boxes">ITEM NAME</p>
-        		<p class="boxes">ITEM NAME</p>     
-        		<p class="boxes">ITEM NAME</p>        		
-        		<p class="boxes">ITEM NAME</p>        		   		
-        	</div>
-        </div>
+		<form id="searchProduct" role="form" method="get" action="/search">
+			Enter product name, categories, or keywords<br>
+	    	<div class="form-group">
+	      	<input type="text" class="form-control" id="txtSearch" placeholder="Search..." name="txtSearch">
+	    	</div>
+	    	<input type="submit" id="submitBtn" class="btn btn-primary" value="Search"></input>
+		</form>
+	</div> 
+
+	{{#each list}}
+	<div class="name">
+		<img src="{{product_image_urls}}" class="img-responsive">
+		<h3>{{name}}</h3>
+		<h1>rating: {{average_product_rating}}</h1>
 	</div>
+	<hr>
+	{{/each}}
+	
+	<div class="search-results"></div>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/result.js"></script>
 </body>
 </html>

@@ -4,23 +4,37 @@
  */
 
 var data = require("../data.json");
-var suggest = [];
-
 
 exports.view = function(req, res){
-    console.log("search");
-    suggestion();
-    res.render('search', suggest);
-};
+	// reset keyword
+	var keyWord = "";
+	keyWord = req.query.txtSearch;
+	var filteredData = [];
+	console.log(keyWord);
 
-
-
-function suggestion(){
-	for(var i in data.list){
-		if(data.list[i] === "5"){
-			suggest.push(data.list[i]);
+	if(keyWord !== undefined) {
+		console.log("for loop: ");
+		for(var unit in data) {
+			for(var name in unit) {
+				console.log(name);
+			}
+			// if(unit.name.includes(keyWord) != -1) {
+			// 	filteredData.push(unit);
+			// }
 		}
 	}
-	return suggest;
+
+	console.log(filteredData);
+
+    res.render('search', data);
 };
+
+function showResult(result) {
+	var projectHTML = '<a href="#" class="detailsImage">' +
+	'<img src="' + result['product_image_urls'] + '" class="img"></a>' +
+	'<p>' + result['name'] +
+	'</p>' + result['description'];
+
+	$()
+}
 
