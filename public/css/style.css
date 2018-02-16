@@ -26,6 +26,12 @@ span {
 	font-size: 3em;
 }
 
+.login {
+	border: 2em;
+	padding: 20px;
+	text-align: center;
+}
+
 #interactive.viewport {
 	position: relative; 
 	width: 100%; 
