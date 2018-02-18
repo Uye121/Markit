@@ -1,0 +1,17 @@
+{
+    "list": [
+        {
+            "uniq_id": "",
+            "sku": "",
+            "name": "",
+            "description": "",
+            "list_price": "",
+            "sale_price": "",
+            "category": "",
+            "average_product_rating": "",
+            "product_image_urls": "",
+            "brand": "",
+            "reviews": ""
+        }
+    ]
+}

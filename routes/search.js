@@ -1,8 +1,3 @@
-
-/*
- * GET search page.
- */
-
 var data = require("../data.json");
 
 exports.view = function(req, res){
@@ -12,17 +7,15 @@ exports.view = function(req, res){
 	var filteredData = [];
 	console.log(keyWord);
 
-	if(keyWord !== undefined) {
-		for(var unit in data) {
-			// if(unit.name.includes(keyWord) != -1) {
-			// 	filteredData.push(unit);
-			// }
+	if(keyWord !== "") {
+		for(i=0; i<data.list.length; i++) {
+			if(data.list[i].name === keyWord) {
+				data.res.push(data.list[i]);
+			}
 		}
 	}
 
-	console.log(filteredData);
-
-    res.render('search', filteredData);
+    res.render('search', data);
 };
 
 function showResult(result) {
@@ -30,7 +23,5 @@ function showResult(result) {
 	'<img src="' + result['product_image_urls'] + '" class="img"></a>' +
 	'<p>' + result['name'] +
 	'</p>' + result['description'];
-
-	$()
 }
 
