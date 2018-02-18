@@ -13,11 +13,7 @@ exports.view = function(req, res){
 	console.log(keyWord);
 
 	if(keyWord !== undefined) {
-		console.log("for loop: ");
 		for(var unit in data) {
-			for(var name in unit) {
-				console.log(name);
-			}
 			// if(unit.name.includes(keyWord) != -1) {
 			// 	filteredData.push(unit);
 			// }
@@ -26,7 +22,7 @@ exports.view = function(req, res){
 
 	console.log(filteredData);
 
-    res.render('search', data);
+    res.render('search', filteredData);
 };
 
 function showResult(result) {

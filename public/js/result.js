@@ -15,4 +15,5 @@ function initializePage() {
 function search(e) {
     e.preventDefault();
 
+    console.log("cogs 120");
 }
