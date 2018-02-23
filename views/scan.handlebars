@@ -26,7 +26,14 @@
 	</div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 
-<div class="product"></div>
+<div class="product">
+	{{#each barcodeProduct}}
+		<img src="{{imageURL}}" class="img-responsive">
+		<h1>{{name}}</h1>
+		<h2>{{barcode}}</h2>
+		<h3>Rating: {{rating}}</h3>
+	{{/each}}
+</div>
 
 <div class="modal" id="livestream_scanner">
 	<div class="modal-dialog">

@@ -1,8 +1,5 @@
-
-/*
- * GET scan page.
- */
+var data = require("../data.json");
 
 exports.view = function(req, res){
-    res.render('scan');
+    res.render('scan', data);
   };

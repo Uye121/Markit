@@ -1,7 +1,7 @@
 'use strict';
 
  $(function() {
-	var walmartAPI = 'http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=';
+	var walmartAPI = 'http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=037000951834';
 	// Create the QuaggaJS config object for the live stream
 	var liveStreamConfig = {
 			inputStream: {
@@ -84,7 +84,8 @@
 	Quagga.onDetected(function(result) {    		
 		if (result.codeResult.code){
 			$('#scanner_input').val(result.codeResult.code);
-			$.get(walmartAPI+result.codeResult.code, getProduct);
+			//$.get(walmartAPI, getProduct);
+			$('#scanner_input').val("036000291452");
 			//document.getElementById('upc_api').href = "http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=" + result.codeResult.code;
 			Quagga.stop();	
 			setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);			
@@ -114,13 +115,18 @@
 var modal = document.getElementById('modal');
 
 function getProduct(code) {
-	console.log(code);
-	
 	var productHTML = '<a href="#" class="productDetail">' +
 	'<img src="' + code['thumbnailImage'] + '" class="img"></a>' +
-	'</p>' + result['longDescription'];
+	'</p>' + code['longDescription'];
 
-	$('.product').html(productHTML);
+	/*
+	console.log(code);
+
+	var productHTML = '<a href="#" class="productDetail">' +
+	'<img src="' + code['thumbnailImage'] + '" class="img"></a>' +
+	'</p>' + code['longDescription'];
+
+	$('.product').html(productHTML);*/
 }
 
 // $('#upc_api').click(function(e) {
