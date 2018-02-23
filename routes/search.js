@@ -3,10 +3,8 @@ var data = require("../data.json");
 exports.view = function(req, res){
 	var keyWord = "";
 	keyWord = req.query.txtSearch;
-	//data.searchFound = true;
 
 	if(keyWord !== "" && keyWord != undefined) {
-		console.log("test");
 		// Reset the result output
 		if(data.res.length != 0) data.res = [];
 
@@ -27,14 +25,10 @@ exports.view = function(req, res){
     res.render('search', data);
 };
 
-function searchNotFound(result) {
-	var errorHTML = '<h1>'+ result + ' not found. Please try again.</h1>';
-}
-
-function showResult(result) {
-	var projectHTML = '<a href="#" class="detailsImage">' +
-	'<img src="' + result['product_image_urls'] + '" class="img"></a>' +
-	'<p>' + result['name'] +
-	'</p>' + result['description'];
-}
+// function showResult(result) {
+// 	var projectHTML = '<a href="#" class="detailsImage">' +
+// 	'<img src="' + result['product_image_urls'] + '" class="img"></a>' +
+// 	'<p>' + result['name'] +
+// 	'</p>' + result['description'];
+// }
 
