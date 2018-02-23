@@ -11,22 +11,28 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="login">
-		Username<br>
-		<input type="text" id="username">
-		<br>
-		Password<br>
-		<input type="text" id="username">
-		<br>
-		<a href="/index" class="button">submit</a>
+	<div class="container">
+		<div class="loading_image">
+			<img id="MarkIt_Image" src="images/markit_white.png">
+		</div>
 
-		<p class="facebookLogin">
-			Login through Facebookx
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-		</p>
+		<div class="login">
+			Username<br>
+			<input type="text" id="username">
+			<br>
+			Password<br>
+			<input type="text" id="password">
+			<br>
+			<a href="/index" class="button">submit</a>
 
+			<p class="facebookLogin">
+				Login through Facebook
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+			</p>
+		</div>
 	</div>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
+	<script src="js/animation.js"></script>
 </body>
 </html>
