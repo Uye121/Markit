@@ -3,9 +3,10 @@ var data = require("../data.json");
 exports.view = function(req, res){
 	var keyWord = "";
 	keyWord = req.query.txtSearch;
-	data.searchFound = true;
+	//data.searchFound = true;
 
 	if(keyWord !== "" && keyWord != undefined) {
+		console.log("test");
 		// Reset the result output
 		if(data.res.length != 0) data.res = [];
 
