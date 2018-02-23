@@ -1,6 +1,7 @@
 'use strict';
 
  $(function() {
+	var walmartAPI = 'http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=';
 	// Create the QuaggaJS config object for the live stream
 	var liveStreamConfig = {
 			inputStream: {
@@ -83,6 +84,8 @@
 	Quagga.onDetected(function(result) {    		
 		if (result.codeResult.code){
 			$('#scanner_input').val(result.codeResult.code);
+			$.get(walmartAPI+result.codeResult.code, getProduct);
+			//document.getElementById('upc_api').href = "http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=" + result.codeResult.code;
 			Quagga.stop();	
 			setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);			
 		}
@@ -102,11 +105,24 @@
 			Quagga.decodeSingle($.extend({}, fileConfig, {src: URL.createObjectURL(e.target.files[0])}), function(result) {
 				// TODO fix the problem of result being undefined.
 				// Either display an error message or do something else.
-				if(result == undefined) { return }
-				else { alert(result.codeResult.code); }
+				alert(result.codeResult.code);
 			});
 		}
 	});
 })
 
 var modal = document.getElementById('modal');
+
+function getProduct(code) {
+	console.log(code);
+	
+	var productHTML = '<a href="#" class="productDetail">' +
+	'<img src="' + code['thumbnailImage'] + '" class="img"></a>' +
+	'</p>' + result['longDescription'];
+
+	$('.product').html(productHTML);
+}
+
+// $('#upc_api').click(function(e) {
+// 	document.getElementById('upc_api').href = "http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=035000521019";
+// });
