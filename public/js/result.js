@@ -9,11 +9,19 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-    $('#search').click(search);
+    $('.btn').click(search);
 }
 
 function search(e) {
-    e.preventDefault();
+    //e.preventDefault();
 
-    console.log("cogs 120");
+	console.log("test");
+    var word = document.getElementById('txtSearch').value;
+}
+
+function showResult(result) {
+	var projectHTML = '<a href="#" class="detailsImage">' +
+	'<img src="' + result['product_image_urls'] + '" class="img"></a>' +
+	'<p>' + result['name'] +
+	'</p>' + result['description'];
 }
