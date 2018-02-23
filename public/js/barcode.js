@@ -19,7 +19,8 @@
 			numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
 			decoder: {
 				"readers":[
-					{"format":"ean_reader","config":{}}
+					// {"format":"ean_reader","config":{}}
+					"code_128_reader", "ean_reader", "ean_8_reader", "upc_reader", "upc_e_reader", "code_93_reader"
 				]
 			},
 			locate: true
@@ -98,7 +99,12 @@
 	// file input
 	$("#livestream_scanner input:file").on("change", function(e) {
 		if (e.target.files && e.target.files.length) {
-			Quagga.decodeSingle($.extend({}, fileConfig, {src: URL.createObjectURL(e.target.files[0])}), function(result) {alert(result.codeResult.code);});
+			Quagga.decodeSingle($.extend({}, fileConfig, {src: URL.createObjectURL(e.target.files[0])}), function(result) {
+				// TODO fix the problem of result being undefined.
+				// Either display an error message or do something else.
+				if(result == undefined) { return }
+				else { alert(result.codeResult.code); }
+			});
 		}
 	});
 })

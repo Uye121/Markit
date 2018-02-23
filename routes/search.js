@@ -1,11 +1,14 @@
 var data = require("../data.json");
 
 exports.view = function(req, res){
-	// reset keyword
 	var keyWord = "";
 	keyWord = req.query.txtSearch;
 
 	if(keyWord !== "" && keyWord != undefined) {
+		// Reset the result output
+		if(data.res.length != 0) data.res = [];
+
+		// TODO Display error when the user's search result returns nothing
 		keyWord = keyWord.toLowerCase();
 		for(i=0; i<data.list.length; i++) {
 			var item = data.list[i];
