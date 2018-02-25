@@ -5,6 +5,7 @@ body {
 
 small {
 	font-size: 1vw !important;
+  color: white;
 }
 
 img {
@@ -16,6 +17,15 @@ h1 {
 	font-size: 2vw !important;
 }
 
+span {
+  color: white !important;
+  font-size: 2vw !important;
+}
+
+html, body {
+  height: 100%;
+}
+
 .container {
 	margin: auto !important;
 	padding:0 !important;
@@ -25,7 +35,7 @@ h1 {
 .Search{
 	font-size: 30px;
 	font-size: 5vw;
-	padding: 14vw 5vw;
+	padding: 14vh 5vw;
     text-align: block;
     background-color: #ffb79b;
     border-bottom: 1vw white solid;
@@ -34,7 +44,7 @@ h1 {
 .Scan {
  	font-size: 30px;
 	font-size: 5vw;
-	padding: 14vw 5vw;
+	padding: 14vh 5vw;
     text-align: block;
 
 }
@@ -42,13 +52,13 @@ h1 {
 #Search_box {
 	border: 2px black solid;
 	color: black;
-	padding: 2vw;
+	padding: 2vh 4.5vw;
 }
 
 #Scan_box {
  	border: 2px white solid;
  	color: white;
- 	padding: 2vw 4.5vw;
+ 	padding: 2vh 4.5vw;
 }
 
 #MarkIt_Image {
@@ -116,14 +126,15 @@ canvas.drawing, canvas.drawingBuffer {
 	right: 0;
 }
 
+
 .button {
-  font: bold 22px Arial;
+  font: bold 4vw Arial;
   text-decoration: none;
   background-color: #EEEEEE;
   color: #333333;
-  padding: 4px 12px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  padding: 1vh 3vw;
+  border-top: 1vw solid #CCCCCC;
+  border-right: 1vw solid #333333;
+  border-bottom: 1vw solid #333333;
+  border-left: 1vw solid #CCCCCC;
 }
