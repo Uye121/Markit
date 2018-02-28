@@ -1,7 +1,7 @@
 'use strict';
 
  $(function() {
-	var walmartAPI = 'http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=037000951834';
+	// var walmartAPI = 'http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=037000951834';
 	// Create the QuaggaJS config object for the live stream
 	var liveStreamConfig = {
 			inputStream: {
@@ -39,6 +39,10 @@
 		);
 	// Start the live stream scanner when the modal opens
 	$('#livestream_scanner').on('shown.bs.modal', function (e) {
+		// $.getJSON('data.json', function(data) {
+		// 	console.log(data);
+		// });
+
 		Quagga.init(
 			liveStreamConfig, 
 			function(err) {
@@ -83,9 +87,8 @@
 	// the barcode had actually been found.
 	Quagga.onDetected(function(result) {    		
 		if (result.codeResult.code){
-			$('#scanner_input').val(result.codeResult.code);
+			$('#txtSearch').val(result.codeResult.code);
 			//$.get(walmartAPI, getProduct);
-			$('#scanner_input').val("036000291452");
 			//document.getElementById('upc_api').href = "http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=" + result.codeResult.code;
 			Quagga.stop();	
 			setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);			
@@ -93,7 +96,10 @@
 	});
     
 	// Stop quagga in any case, when the modal is closed
-    $('#livestream_scanner').on('hide.bs.modal', function(){
+    $('#livestream_scanner').on('hide.bs.modal', function() {
+		//window.location.href="/scan";
+		//location.reload();
+
     	if (Quagga){
     		Quagga.stop();	
     	}
@@ -113,21 +119,6 @@
 })
 
 var modal = document.getElementById('modal');
-
-function getProduct(code) {
-	var productHTML = '<a href="#" class="productDetail">' +
-	'<img src="' + code['thumbnailImage'] + '" class="img"></a>' +
-	'</p>' + code['longDescription'];
-
-	/*
-	console.log(code);
-
-	var productHTML = '<a href="#" class="productDetail">' +
-	'<img src="' + code['thumbnailImage'] + '" class="img"></a>' +
-	'</p>' + code['longDescription'];
-
-	$('.product').html(productHTML);*/
-}
 
 // $('#upc_api').click(function(e) {
 // 	document.getElementById('upc_api').href = "http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=035000521019";

@@ -1,9 +1,9 @@
 {
-	"List": [ 
+	"list": [ 
 		{
-			"barcode": "",
+			"barcode": "0036000291452",
 			"name": "Lucky Charms",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/916JRf-LnnL._SY679_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/916JRf-LnnL._SY679_.jpg",
 			"description": "Frosted toasted oat cereal with fun shaped marshmallows",
 			"review": [
         { "title": "Not just for breakfast!", 
@@ -20,9 +20,9 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "",
+			"barcode": "0671860013624",
 			"name": "Honey Nut Cheerios",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91qsu1bkvlL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91qsu1bkvlL._SX522_.jpg",
 			"description": "Made with 100% natural whole grain oats and oat bran",
 			"review": [
         {
@@ -40,9 +40,9 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "",
+			"barcode": "0036000291452",
 			"name": "Frosted Flakes",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91tqhqtCXUL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91tqhqtCXUL._SX522_.jpg",
 			"description": "Features frosted, oven-toasted corn flakes. Fortified with 10 essential vitamins and minerals. They have no cholesterol and are fat free^Corn used in this product contains traces of soybeans",
 			"review": [
         {
@@ -60,9 +60,9 @@
 			"brand": "Kellogg's"
 		},
 		{
-			"barcode": "",
+			"barcode": "0725272730706",
 			"name": "Raisin Bran",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91IUQL4qlsL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91IUQL4qlsL._SX522_.jpg",
 			"description": "17% of daily fiber per serving. Includes 25% recommended intake of iron. Whole wheat first ingredient",
 			"review": [
         {
@@ -79,9 +79,9 @@
 			"brand": "Kellogg's"
 		},
 		{
-			"barcode": "",
+			"barcode": "0123456789012",
 			"name": "Frosted Mini Wheats",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91x%2BicBlQ2L._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91x%2BicBlQ2L._SX522_.jpg",
 			"description": "Eight crunchy layers of whole-grain fiber with a sweet frosted coating",
 			"review": [
         {
@@ -99,9 +99,9 @@
 			"brand": "Kellogg's"
 		},
 		{
-			"barcode": "",
+			"barcode": "5012345678900",
 			"name": "Cinnamon Toast Crunch",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/514iFU70rVL.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/514iFU70rVL.jpg",
 			"description": "Real cinnamon sugar, crispy sweetened whole wheat and rice cereal",
 			"review": [
         {
@@ -119,9 +119,9 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "",
+			"barcode": "9771234567003",
 			"name": "Honey Bunches of Oats",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91-ObhF1jvL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91-ObhF1jvL._SX522_.jpg",
 			"description": "Honey Bunches of Oats cereal is the perfect combination of crispy flakes, crunchy oat clusters with a touch of honey, and the nutrition you need to nourish every smile.",
 			"review": [
         {
@@ -139,9 +139,9 @@
 			"brand": "Post"
 		},
 		{
-			"barcode": "",
+			"barcode": "0701197952225",
 			"name": "WWE Booty O's",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/51Gy2YBwm5L.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/51Gy2YBwm5L.jpg",
 			"description": "The official cereal of WWE’s The New Day professional wrestling group.",
 			"review": [
         {
@@ -153,15 +153,15 @@
           "review": "Perfect gift for my Unicorn loving friend. Package came in just fine."
         }
       ],
-			"rating": "",
-			"category": "",
-			"price": "",
-			"brand": ""
+			"rating": "2.3",
+			"category": "cereal",
+			"price": "3.78",
+			"brand": "WWE"
 		},
 		{
-			"barcode": "",
+			"barcode": "0671860013624",
 			"name": "Poop Like A Champion",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/71C7NxhabaL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/71C7NxhabaL._SX522_.jpg",
 			"description": " THIS IS NOT MERE CEREAL, it’s the ultimate colon cleansing formula with a stupendous amount of soluble and insoluble fiber.",
 			"review": [
         {
@@ -179,9 +179,9 @@
 			"brand": "Poop Like A Champion"
 		},
 		{
-			"barcode": "",
+			"barcode": "0130018701368",
 			"name": "Life Cereal",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/819bUPA3b%2BL._SY679_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/819bUPA3b%2BL._SY679_.jpg",
 			"description": "Lightly sweetend whole grain Quaker Oats",
 			"review": [
         {
@@ -199,9 +199,9 @@
 			"brand": "Quaker"
 		},
 		{
-			"barcode": "",
+			"barcode": "0725272730706",
 			"name": "Chocolate Peanut Butter Cheerios",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91kDf4XT%2BBL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91kDf4XT%2BBL._SX522_.jpg",
 			"description": "A whole grain food is made by using all three parts of the grain.",
 			"review": [
         {
@@ -219,9 +219,9 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "",
+			"barcode": "0614141000036",
 			"name": "Quaker Oatmeal Squares",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/514gbNd8xgL.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/514gbNd8xgL.jpg",
 			"description": "Whole grain oatmeal squares cereal, great with milk or for snacking",
 			"review": [
         {
@@ -239,9 +239,9 @@
 			"brand": "Quaker"
 		},
 		{
-			"barcode": "",
+			"barcode": "5012345678900",
 			"name": "Frosted Mini-Wheats Little Bites",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91VQuRv4o5L._SY679SX483_SY679_CR,0,0,483,679_PIbundle-4,TopRight,0,0_SX483_SY679_CR,0,0,483,679_SH20_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91VQuRv4o5L._SY679SX483_SY679_CR,0,0,483,679_PIbundle-4,TopRight,0,0_SX483_SY679_CR,0,0,483,679_SH20_.jpg",
 			"description": "Healthy breakfast or snack that the whole family will love",
 			"review": [
         {
@@ -259,9 +259,9 @@
 			"brand": "Kellogg's"
 		},
 		{
-			"barcode": "",
+			"barcode": "8901072002478",
 			"name": "Chocolate Chex Cereal",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91CFmxVJ-LL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91CFmxVJ-LL._SX522_.jpg",
 			"description": "Wholesome breakfast that's a good source of calcium",
 			"review": [
         {
@@ -279,9 +279,9 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "",
+			"barcode": "0125002741350",
 			"name": "Special K, Red Berries",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91BtBjJHp7L._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91BtBjJHp7L._SX522_.jpg",
 			"description": "Crunchy, lightly sweetened breakfast cereal that’s bursting with strawberries for a delicious bite in every satisfying spoonful",
 			"review": [
         {
@@ -299,9 +299,9 @@
 			"brand": "Kellogg's"
 		},
 		{
-			"barcode": "",
+			"barcode": "6000980911046",
 			"name": "EnviroKidz Gorilla Munch ",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/918tGFUTXOL._SY679_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/918tGFUTXOL._SY679_.jpg",
 			"description": "Made only with organic corn meal, organic evaporated cane juice, and sea salt",
 			"review": [
         {
@@ -319,9 +319,9 @@
 			"brand": "Envirokidz"
 		},
 		{
-			"barcode": "",
+			"barcode": "0365813216087",
 			"name": "Reeses Puffs",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/51Ozy3RF6xL.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/51Ozy3RF6xL.jpg",
 			"description": " Hershey's cocoa and Reese's peanut butter cereal",
 			"review": [
         {
@@ -339,9 +339,9 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "",
+			"barcode": "9788679912077",
 			"name": "Rice Krispies Treats",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/914bdwIfLAL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/914bdwIfLAL._SX522_.jpg",
 			"description": "Good Source of Vitamin D",
 			"review": [
         {
@@ -359,9 +359,9 @@
 			"brand": "Kellogg's"
 		},
 		{
-			"barcode": "",
+			"barcode": "0987654321098",
 			"name": "Cap'n Crunch Crunch Berries",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/91JQW%2BGBKDL._SY679_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91JQW%2BGBKDL._SY679_.jpg",
 			"description": "Captain Crunch's Crunch Berries combines crunchy sweetened corn and oat biscuits with delicious fruit flavored berry shapes",
 			"review": [
         {
@@ -380,9 +380,9 @@
 
 		},
 		{
-			"barcode": "",
+			"barcode": "0850785004003",
 			"name": " Super Mario Cereal",
-			"image_url": "https://images-na.ssl-images-amazon.com/images/I/914bgrRC5lL._SX522_.jpg",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/914bgrRC5lL._SX522_.jpg",
 			"description": "Take a breakfast odyssey with limited edition crunchy, sweetened marshmallow cereal that’s bursting with the delicious fruity taste of mixed berries and hearty oats in every satisfying spoonful",
 			"review": [
         {
@@ -399,5 +399,9 @@
 			"price": "3.19",
 			"brand": "Kellogg's"
 		}
-	]
+	],
+	"searchFound": "",
+	"res": [],
+	"scanFound": "",
+	"scanRes": []
 }
