@@ -63,7 +63,9 @@
 		</div>
 	{{/each}}
 {{else}}
-	<p>Product not found.</p>
+	{{#if scanInit}}
+		<p>Product not found.</p>
+	{{/if}}
 {{/if}}
 
 <script src="js/barcode.js"></script>

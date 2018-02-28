@@ -1,8 +1,16 @@
 var data = require("../data.json");
 
 exports.view = function(req, res){
+	data.res=[];
 	var keyWord = "";
 	keyWord = req.query.txtSearch;
+
+	// TODO init only when user started searching for things
+	if(req.query != "") {
+		console.log("searching...");
+	} else {
+		console.log("initing...");
+	}
 
 	if(keyWord !== "" && keyWord != undefined) {
 		// Reset the result output

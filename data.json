@@ -20,7 +20,7 @@
 			"brand": "General Mills"
 		},
 		{
-			"barcode": "0671860013624",
+			"barcode": "0132002701730",
 			"name": "Honey Nut Cheerios",
 			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/91qsu1bkvlL._SX522_.jpg",
 			"description": "Made with 100% natural whole grain oats and oat bran",
@@ -403,5 +403,7 @@
 	"searchFound": "",
 	"res": [],
 	"scanFound": "",
-	"scanRes": []
+	"scanRes": [],
+	"searchInit": "",
+	"scanInit": ""
 }

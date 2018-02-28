@@ -25,13 +25,15 @@
 	{{#if searchFound}}
 		{{#each res}}
 		<div class="name">
-			<img src="{{product_image_urls}}" class="img-responsive">
+			<img src="{{imageURL}}" class="img-responsive">
 			<h3>{{name}}</h3>
-			<h1>rating: {{average_product_rating}}</h1>
+			<h1>rating: {{rating}}</h1>
 		</div>
 		{{/each}}
 	{{else}}
-		<p>{{searchWord}} not found.</p>
+		{{#if searchInit}}
+			<p>{{searchWord}} not found.</p>
+		{{/if}}
 	{{/if}}
 	
 	<div class="search-results"></div>
