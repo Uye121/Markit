@@ -20,8 +20,9 @@
 	    	</div>
 	    	<input type="submit" id="submitBtn" class="btn btn-primary" value="Search"></input>
 		</form>
-	</div> 
+	</div>
 
+	<div class="container">
 	{{#if searchFound}}
 		{{#each res}}
 		<div class="name">
@@ -35,20 +36,20 @@
 			<p>{{searchWord}} not found.</p>
 		{{/if}}
 	{{/if}}
+	</div>
 
 	<nav id="navbar">
-		<div class="container">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
 	</nav>
 	
 	<div class="search-results"></div>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/result.js"></script>
+
 </body>
 </html>
