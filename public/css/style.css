@@ -4,42 +4,10 @@ body {
   	text-align: center;
 }
 
-a {
-    text-decoration: none !important;
-}
-
-h1 {
-	color: white !important;
-	font-size: 2vw !important;
-}
-
-h3 {
-    color:white !important;
-    font-size: 2vw !important;
-}
-
 span {
     color: white !important;
     font-size: 2vw !important;
 }
-
-#search_img{
-    float: center;
-    display: inline-block;
-    width: 70%;
-}
-
-#search_result{
-    float: center;
-    display: inline-block;
-    width: 30%;
-}
-
-#searchss{
-    display: inline;
-    height: 50%;
-}
-
 
 nav {
     margin: auto !important;
@@ -51,31 +19,137 @@ html, body {
     height: 100%;
 }
 
-img{
-    height: 150px !important;
-    width: auto !important;
-}
-
-
 .container{
     margin: auto !important;
     padding:0 !important;
     width: 100% !important;
 }
 
+/* log in page */
+
+#MarkIt_Image {
+    padding-top : 5vw;
+    margin-top: 5vw;
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login {
+    color: #F48058;
+    font-size:4vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.button {
+    font: bold 4vw Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 1vh 3vw;
+    border-top: 1vw solid #CCCCCC;
+    border-right: 1vw solid #333333;
+    border-bottom: 1vw solid #333333;
+    border-left: 1vw solid #CCCCCC;
+}
+
+#fb-login {
+    transform: scale(0.8);
+    margin-left: 1vw;
+}
+
+/* Home/index page */
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover{
+    color:red !important;
+}
+
+a:active{
+    color:green !important;
+}
+
 .Search{
-	font-size: 5vh;
-	padding: 14vh 5vw;
+    font-size: 10vh;
+    padding: 14vh 5vw;
     text-align: block;
     background-color: #F48058;
 }
 
 .Scan {
-	font-size: 5vw;
-	padding: 14vh 5vw;
+    font-size: 10vh;
+    padding: 14vh 5vw;
     text-align: block;
 
 }
+
+#Search_box {
+    border: 2px black solid;
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+}
+
+#Scan_box {
+    border: 2px white solid;
+    color: white;
+    vertical-align: middle;
+}
+
+/* search page */
+
+#search_img{
+    height: 150px !important;
+    width: auto !important;
+    float: center;
+    display: inline-block;
+    width: 70%;
+}
+
+#search_result{
+    float: center;
+    display: inline-block;
+    width: 30%;
+}
+
+#searchs{
+    display: inline;
+    height: 50%;
+}
+
+/* Nav Bar */
 
 #navbar{
     background-color:#fff;
@@ -100,64 +174,9 @@ img{
     display:inline !important;
 }
 
-#Search_box {
-	border: 2px black solid;
-    background-color: black;
-	color: white;
-    vertical-align: middle;
-}
 
-#Scan_box {
- 	border: 2px white solid;
- 	color: white;
-    vertical-align: middle;
-}
 
-#MarkIt_Image {
-	padding: 10vw;
-	margin: 10vw;
-	-webkit-animation: blink 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation: blink 2s;
-    -moz-animation-iteration-count: infinite;
-    -o-animation: blink 2s;
-    -o-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes blink {
-
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-moz-keyframes blink {
-
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-o-keyframes blink {
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.login {
-	color: #F48058;
-	font-size:4vw;
-	padding: 20px;
-	text-align: center;
-
-}
+/* things I don't know */
 
 #interactive.viewport {
 	position: relative; 
@@ -176,21 +195,4 @@ canvas.drawing, canvas.drawingBuffer {
 	position: absolute;
 	left: 0;
 	right: 0;
-}
-
-#fb-login {
-    transform: scale(0.8);
-    margin-left: 1vw;
-}
-
-.button {
-    font: bold 4vw Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 1vh 3vw;
-    border-top: 1vw solid #CCCCCC;
-    border-right: 1vw solid #333333;
-    border-bottom: 1vw solid #333333;
-    border-left: 1vw solid #CCCCCC;
 }
