@@ -6,7 +6,6 @@ body {
 
 span {
     color: white !important;
-    font-size: 2vw !important;
 }
 
 nav {
@@ -89,43 +88,63 @@ html, body {
 
 /* Home/index page */
 
-a {
+a.home{
     text-decoration: none !important;
-}
-
-a:hover{
-    color:red !important;
-}
-
-a:active{
-    color:green !important;
+    color: white;
 }
 
 .Search{
-    font-size: 10vh;
-    padding: 14vh 5vw;
+    font-size: 6vw;
+    width: 100%;
+    height: 50%;
     text-align: block;
     background-color: #F48058;
 }
 
-.Scan {
-    font-size: 10vh;
-    padding: 14vh 5vw;
-    text-align: block;
+a:hover #Search_box_word{
+    color:black !important;
+}
 
+#Search_box_word{
+    vertical-align: center;
 }
 
 #Search_box {
     border: 2px black solid;
     background-color: black;
     color: white;
-    vertical-align: middle;
+    vertical-align: top;
+    font-size: 4vw;
+}
+
+a:hover #Search_box{
+    border: 2px #F48058 solid;
+    background-color: #F48058;
+    color: black !important;
+}
+
+.Scan {
+    font-size: 6vw;
+    width: 100%;
+    height: 50%;
+    text-align: block;
+}
+
+a:hover #Scan_box_word{
+    color:#F48058 !important;
 }
 
 #Scan_box {
-    border: 2px white solid;
+    border: 2px #F48058 solid;
+    background-color: #F48058;
     color: white;
     vertical-align: middle;
+}
+
+a:hover #Scan_box{
+    border: 2px black solid;
+    background-color: black;
+    color: #F48058;
 }
 
 /* search page */
