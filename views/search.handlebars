@@ -26,9 +26,16 @@
 	{{#if searchFound}}
 		{{#each res}}
 		<div class="name">
-			<img src="{{imageURL}}" class="img-responsive">
-			<h3>{{name}}</h3>
-			<h1>rating: {{rating}}</h1>
+			<img id="search_img"src="{{imageURL}}" class="img-responsive">
+			<div id="search_result">
+				<div id="searchss">
+					{{name}}
+				</div>
+				<div id="searchss">
+					rating: {{rating}}
+				</div>
+			</div>
+			<br><br><br>
 		</div>
 		{{/each}}
 	{{else}}
