@@ -111,7 +111,7 @@ a:hover #Search_box_word{
 }
 
 #Search_box_word{
-    font-size: 6vw;
+    font-size: 10vw;
 }
 
 #Search_box {
@@ -119,7 +119,7 @@ a:hover #Search_box_word{
     background-color: black;
     color: white;
     vertical-align: top;
-    font-size: 4vw;
+    font-size: 6vw;
     padding: 1vh 10vw;
 }
 
@@ -142,7 +142,7 @@ a:hover #Scan_box_word{
 }
 
 #Scan_box_word{
-    font-size: 6vw;
+    font-size: 10vw;
 }
 
 #Scan_box {
@@ -150,7 +150,7 @@ a:hover #Scan_box_word{
     background-color: #F48058;
     color: white;
     vertical-align: top;
-    font-size: 4vw;
+    font-size: 6vw;
     padding: 1vh 8vw;
 }
 
