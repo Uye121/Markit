@@ -88,6 +88,10 @@ html, body {
 
 /* Home/index page */
 
+img.logo{
+    max-width: 50%;
+}
+
 a.home{
     text-decoration: none !important;
     color: white;
