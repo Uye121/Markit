@@ -15,13 +15,12 @@ function initializePage() {
 function search(e) {
     //e.preventDefault();
 
-	console.log("test");
     var word = document.getElementById('txtSearch').value;
 }
 
 function showResult(result) {
-	var projectHTML = '<a href="#" class="detailsImage">' +
-	'<img src="' + result['product_image_urls'] + '" class="img"></a>' +
-	'<p>' + result['name'] +
-	'</p>' + result['description'];
+	// var projectHTML = '<a href="#" class="detailsImage">' +
+	// '<img src="' + result['product_image_urls'] + '" class="img"></a>' +
+	// '<p>' + result['name'] +
+	// '</p>' + result['description'];
 }

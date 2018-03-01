@@ -5,18 +5,12 @@ exports.view = function(req, res){
 	var keyWord = "";
 	keyWord = req.query.txtSearch;
 
-	// TODO init only when user started searching for things
-	if(req.query != "") {
-		console.log("searching...");
-	} else {
-		console.log("initing...");
-	}
-
 	if(keyWord !== "" && keyWord != undefined) {
 		// Reset the result output
-		if(data.res.length != 0) data.res = [];
+		// if(data.res.length != 0) data.res = [];
 
 		data.searchWord = keyWord;
+		data.searchInit = true;
 
 		keyWord = keyWord.toLowerCase();
 		for(i=0; i<data.list.length; i++) {
