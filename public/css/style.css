@@ -182,7 +182,7 @@ a:hover #Scan_box{
 }
 
 #extra_space{
-    padding: 100px;
+    padding: 50px;
 }
 
 /* Nav Bar */
@@ -196,7 +196,7 @@ a:hover #Scan_box{
 #navbar a{
     color:white;
     text-decoration: none !important;
-    font-size: 8vw !important;
+    font-size: 7vw !important;
     padding-right:15px !important;
 }
 
