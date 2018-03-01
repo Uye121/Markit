@@ -184,16 +184,15 @@ a:hover #Scan_box{
 /* Nav Bar */
 
 #navbar{
-    background-color:#fff;
-    color:#333;
+    background-color:#F48058;
     position: fixed;
-    top: 400px;
+    bottom: 0%;
 }
 
 #navbar a{
-    color:#333;
+    color:white;
     text-decoration: none !important;
-    font-size:18px !important;
+    font-size: 4vw !important;
     padding-right:15px !important;
 }
 
