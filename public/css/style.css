@@ -210,8 +210,6 @@ a:hover #Scan_box{
 #navbar a{
     color:white;
     text-decoration: none !important;
-    font-size: 7vw !important;
-    padding-right:15px !important;
 }
 
 #navbar ul{
@@ -221,6 +219,30 @@ a:hover #Scan_box{
 
 #navbar li{
     display:inline !important;
+}
+
+#navbar li:nth-child(1){
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+    font-size: 7vw !important;
+    padding-right:15px !important;
+}
+
+#navbar li:nth-child(2){
+    border-right: 2px white solid;
+    font-size: 7vw !important;
+    padding-right:15px !important;
+}
+
+#navbar li:nth-child(3){
+    border-right: 2px white solid;
+    font-size: 7vw !important;
+    padding-right:15px !important;
+}
+
+#navbar li:nth-child(4){
+    border-right: 2px white solid;
+    font-size: 7vw !important;
 }
 
 
