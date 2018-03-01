@@ -13,6 +13,11 @@
 <body>
 
 	<div class="container">
+		<div class="title">
+			<a href="/index"><
+			<img class="logo" src="images/MarkitTextLogoWhite.png">
+			</a>
+		</div>
 		<form id="searchProduct" role="form" method="get" action="/search">
 			Enter product name, categories, or keywords<br>
 	    	<div class="form-group">
@@ -21,6 +26,8 @@
 	    	<input type="submit" id="submitBtn" class="btn btn-primary" value="Search"></input>
 		</form>
 	</div>
+
+	<br>
 
 	<div class="container">
 	{{#if searchFound}}

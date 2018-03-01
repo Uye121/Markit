@@ -13,63 +13,82 @@
 </head>
 <body>
 	<div class="container">
-<form id="searchCode" role="form" method="get" action="/scan">
-<div class="row">
-	<div class="col-lg-6">
-		<div class="input-group">
-			<input type="text" id="txtSearch" class="form-control" placeholder="Click the button to scan an barcode..." name="txtSearch"/>
-			<span class="input-group-btn"> 
-				<button class="btn btn-default" type="button" data-toggle="modal" data-target="#livestream_scanner">
-					<i class="fa fa-barcode"></i>
-				</button> 
-			</span>
+		<div class="title">
+			<a href="/index"><
+			<img class="logo" src="images/MarkitTextLogoWhite.png">
+			</a>
 		</div>
+		<form id="searchCode" role="form" method="get" action="/scan">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<input type="text" id="txtSearch" class="form-control" placeholder="Enter Barcode Here..." name="txtSearch"/>
+				</div>
+					<span class="input-group-btn"> use the button to scan
+						<button class="btn btn-default" id="scan_btn" type="button" data-toggle="modal" data-target="#livestream_scanner">
+						<i class="fa fa-barcode"></i>
+						</button> 
+					</span>
+				
+			</div>
+		</div>
+
+		<div class="modal" id="livestream_scanner">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Barcode Scanner</h4>
+					</div>
+					<div class="modal-body" style="position: static">
+						<div id="interactive" class="viewport"></div>
+						<div class="error"></div>
+					</div>
+					<div class="modal-footer">
+						<label class="btn btn-default pull-left">
+							<i class="fa fa-camera"></i> Use camera app
+							<input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
+						</label>
+						<button type="button" class="btn btn-primary" data-dismiss="modal" id="closeCamera">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+
+		<input type="submit" id="submitBtn" class="btn btn-primary" value="Confirm"></input>
+
+		</form>
+
+		{{#if scanFound}}
+			{{#each scanRes}}
+				<div class="name">
+					<img src="{{imageURL}}" class="img-responsive">
+					<h3>{{name}}</h3>
+					<h1>rating: {{rating}}</h1>
+				</div>
+			{{/each}}
+		{{else}}
+			{{#if scanInit}}
+				<p>Product not found.</p>
+			{{/if}}
+		{{/if}}
+
+		<div id="extra_space"></div>
+
+		<div class="container">
+			<nav id="navbar">
+				<ul>
+					<li><a href="/index">Home</a></li>
+					<li><a href="/scan">Scan</a></li>
+					<li><a href="/search">Search</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<script src="js/barcode.js"></script>
 	</div>
-</div>
-
-<div class="modal" id="livestream_scanner">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title">Barcode Scanner</h4>
-			</div>
-			<div class="modal-body" style="position: static">
-				<div id="interactive" class="viewport"></div>
-				<div class="error"></div>
-			</div>
-			<div class="modal-footer">
-				<label class="btn btn-default pull-left">
-					<i class="fa fa-camera"></i> Use camera app
-					<input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
-				</label>
-				<button type="button" class="btn btn-primary" data-dismiss="modal" id="closeCamera">Close</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div>
-
-<input type="submit" id="submitBtn" class="btn btn-primary" value="Confirm"></input>
-
-</form>
-
-{{#if scanFound}}
-	{{#each scanRes}}
-		<div class="name">
-			<img src="{{imageURL}}" class="img-responsive">
-			<h3>{{name}}</h3>
-			<h1>rating: {{rating}}</h1>
-		</div>
-	{{/each}}
-{{else}}
-	{{#if scanInit}}
-		<p>Product not found.</p>
-	{{/if}}
-{{/if}}
-
-<script src="js/barcode.js"></script>
-</div>
 </body>
 </html>

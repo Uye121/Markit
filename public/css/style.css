@@ -24,7 +24,8 @@ html, body {
     width: 100% !important;
 }
 
-/* log in page */
+/****************/
+/* Log-in Page */
 
 #MarkIt_Image {
     padding-top : 5vw;
@@ -86,7 +87,8 @@ html, body {
     margin-left: 1vw;
 }
 
-/* Home/index page */
+/********************/
+/* Home/Index Page */
 
 img.logo{
     max-width: 80%;
@@ -160,7 +162,8 @@ a:hover #Scan_box{
     color: #F48058;
 }
 
-/* search page */
+/****************/
+/* Search Page */
 
 #search_img{
     height: 150px !important;
@@ -185,6 +188,17 @@ a:hover #Scan_box{
     padding: 50px;
 }
 
+/**************/
+/* Scan Page */
+
+#txtSearch{
+}
+
+#scan_btn{
+    display: block !important;
+}
+
+/************/
 /* Nav Bar */
 
 #navbar{
@@ -210,7 +224,7 @@ a:hover #Scan_box{
 }
 
 
-
+/************************/
 /* things I don't know */
 
 #interactive.viewport {
