@@ -1,6 +1,7 @@
 body {
     background-color: #000000 !important;
   	text-align: center;
+    padding-bottom: 400px;
 }
 
 small {
@@ -12,17 +13,13 @@ a {
     text-decoration: none !important;
 }
 
-img {
-    
-}
-
 h1 {
 	color: white !important;
 	font-size: 2vw !important;
 }
 
 span {
-      color: white !important;
+    color: white !important;
     font-size: 2vw !important;
 }
 
@@ -48,6 +45,29 @@ html, body {
 	padding: 14vh 5vw;
     text-align: block;
 
+}
+
+#navbar{
+    background-color:#fff;
+    color:#333;
+    position: fixed;
+    top: 400px;
+}
+
+#navbar a{
+    color:#333;
+    text-decoration: none !important;
+    font-size:18px !important;
+    padding-right:15px !important;
+}
+
+#navbar ul{
+    padding:0 !important;
+    list-style: none !important;
+}
+
+#navbar li{
+    display:inline !important;
 }
 
 #Search_box {
@@ -128,6 +148,11 @@ canvas.drawing, canvas.drawingBuffer {
 	right: 0;
 }
 
+#fb-login {
+    transform: scale(0.8);
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
 
 .button {
     font: bold 4vw Arial;
