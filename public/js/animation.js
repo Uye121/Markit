@@ -27,6 +27,9 @@ function initializePage() {
     $('#password').blur(function(){
     	$(this).css('background', 'white')
     });
+
+    // Start A/B tracking after animation
+    track();
 }
 
 function fade(e) {
