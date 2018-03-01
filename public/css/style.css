@@ -4,18 +4,8 @@ body {
   	text-align: center;
 }
 
-a {
-    text-decoration: none !important;
-}
-
-h1 {
-	color: white !important;
-	font-size: 2vw !important;
-}
-
 span {
     color: white !important;
-    font-size: 2vw !important;
 }
 
 nav {
@@ -28,49 +18,198 @@ html, body {
     height: 100%;
 }
 
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    max-width: 100%;
-    height: 50%;
-    width: auto
-}
-
-
 .container{
     margin: auto !important;
     padding:0 !important;
     width: 100% !important;
 }
 
+/****************/
+/* Log-in Page */
+
+#MarkIt_Image {
+    padding-top : 5vw;
+    margin-top: 5vw;
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login {
+    color: #F48058;
+    font-size:4vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.button {
+    font: bold 4vw Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 1vh 3vw;
+    border-top: 1vw solid #CCCCCC;
+    border-right: 1vw solid #333333;
+    border-bottom: 1vw solid #333333;
+    border-left: 1vw solid #CCCCCC;
+}
+
+#fb-login {
+    transform: scale(0.8);
+    margin-left: 1vw;
+}
+
+/********************/
+/* Home/Index Page */
+
+img.logo{
+    max-width: 80%;
+}
+
+a.home{
+    text-decoration: none !important;
+    color: white;
+}
+
 .Search{
-	font-size: 5vh;
-	padding: 14vh 5vw;
+    font-size: 6vh;
+    padding: 5vh 10vw;
+    width: 100%;
+    height: 50%;
     text-align: block;
     background-color: #F48058;
 }
 
-.Scan {
-	font-size: 5vw;
-	padding: 14vh 5vw;
-    text-align: block;
-
+a:hover #Search_box_word{
+    color:black !important;
 }
 
+#Search_box_word{
+    font-size: 10vw;
+}
+
+#Search_box {
+    border: 2px black solid;
+    background-color: black;
+    color: white;
+    vertical-align: top;
+    font-size: 6vw;
+    padding: 1vh 10vw;
+}
+
+a:hover #Search_box{
+    border: 2px #F48058 solid;
+    background-color: #F48058;
+    color: black !important;
+}
+
+.Scan {
+    font-size: 6vh;
+    padding: 5vh 10vw;
+    width: 100%;
+    height: 50%;
+    text-align: block;
+}
+
+a:hover #Scan_box_word{
+    color:#F48058 !important;
+}
+
+#Scan_box_word{
+    font-size: 10vw;
+}
+
+#Scan_box {
+    border: 2px #F48058 solid;
+    background-color: #F48058;
+    color: white;
+    vertical-align: top;
+    font-size: 6vw;
+    padding: 1vh 8vw;
+}
+
+a:hover #Scan_box{
+    border: 2px black solid;
+    background-color: black;
+    color: #F48058;
+}
+
+/****************/
+/* Search Page */
+
+#search_img{
+    height: 150px !important;
+    width: auto !important;
+    float: center;
+    display: inline-block;
+    width: 70%;
+}
+
+#search_result{
+    float: center;
+    display: inline-block;
+    width: 30%;
+}
+
+#searchs{
+    display: inline;
+    height: 50%;
+}
+
+#extra_space{
+    padding: 50px;
+}
+
+/**************/
+/* Scan Page */
+
+#txtSearch{
+}
+
+#scan_btn{
+    display: block !important;
+}
+
+/************/
+/* Nav Bar */
+
 #navbar{
-    background-color:#fff;
-    color:#333;
+    background-color:#F48058;
     position: fixed;
-    top: 400px;
+    bottom: 0%;
 }
 
 #navbar a{
-    color:#333;
+    color:white;
     text-decoration: none !important;
-    font-size:18px !important;
-    padding-right:15px !important;
 }
 
 #navbar ul{
@@ -82,64 +221,28 @@ img{
     display:inline !important;
 }
 
-#Search_box {
-	border: 2px black solid;
-    background-color: black;
-	color: white;
-    vertical-align: middle;
+#navbar li:nth-child(1){
+    font-size: 7vw !important;
+    padding-right:10px !important;
 }
 
-#Scan_box {
- 	border: 2px white solid;
- 	color: white;
-    vertical-align: middle;
+#navbar li:nth-child(2){
+    font-size: 7vw !important;
+    padding-right:10px !important;
 }
 
-#MarkIt_Image {
-	padding: 10vw;
-	margin: 10vw;
-	-webkit-animation: blink 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation: blink 2s;
-    -moz-animation-iteration-count: infinite;
-    -o-animation: blink 2s;
-    -o-animation-iteration-count: infinite;
+#navbar li:nth-child(3){
+    font-size: 7vw !important;
+    padding-right:8px !important;
 }
 
-@-webkit-keyframes blink {
-
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-moz-keyframes blink {
-
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-o-keyframes blink {
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 1;
-    }
+#navbar li:nth-child(4){
+    font-size: 7vw !important;
 }
 
-.login {
-	color: #F48058;
-	font-size:4vw;
-	padding: 20px;
-	text-align: center;
 
-}
+/************************/
+/* things I don't know */
 
 #interactive.viewport {
 	position: relative; 
@@ -158,21 +261,4 @@ canvas.drawing, canvas.drawingBuffer {
 	position: absolute;
 	left: 0;
 	right: 0;
-}
-
-#fb-login {
-    transform: scale(0.8);
-    margin-left: 1vw;
-}
-
-.button {
-    font: bold 4vw Arial;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 1vh 3vw;
-    border-top: 1vw solid #CCCCCC;
-    border-right: 1vw solid #333333;
-    border-bottom: 1vw solid #333333;
-    border-left: 1vw solid #CCCCCC;
 }
