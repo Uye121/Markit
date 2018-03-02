@@ -47,7 +47,7 @@ app.get('/scan', scan.view);
 app.get('/review', review.view);
 app.get('/search_result', search_result.view);
 app.get('/', log_in.view);
-app.get('/original_login', log_in.originalview);
+// app.get('/original_login', log_in.originalview);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
