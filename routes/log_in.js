@@ -8,6 +8,6 @@ exports.view = function(req, res){
   res.render('log_in');
 };
 
-// exports.originalview = function(req, res) {
-//   res.render('original_login');
-// }
+exports.originalview = function(req, res) {
+  res.render('original_login');
+};
