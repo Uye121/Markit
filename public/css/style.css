@@ -180,7 +180,8 @@ a:hover #Scan_box{
 }
 
 #searchs{
-    display: inline;
+    width: 100%;
+    display: block;
     height: 50%;
 }
 
