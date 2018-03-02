@@ -10,4 +10,4 @@ exports.view = function(req, res){
 
 exports.originalview = function(req, res) {
   res.render('original_login');
-}
+};
