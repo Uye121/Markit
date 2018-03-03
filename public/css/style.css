@@ -1,5 +1,5 @@
 body {
-    background-color: #000000 !important;
+    background-color: #252525 !important;
     color: white !important;
   	text-align: center;
 }
@@ -109,7 +109,7 @@ a.home{
 }
 
 a:hover #Search_box_word{
-    color:black !important;
+    color:#252525 !important;
 }
 
 #Search_box_word{
@@ -117,8 +117,8 @@ a:hover #Search_box_word{
 }
 
 #Search_box {
-    border: 2px black solid;
-    background-color: black;
+    border: 2px #252525 solid;
+    background-color: #252525;
     color: white;
     vertical-align: top;
     font-size: 6vw;
@@ -128,7 +128,7 @@ a:hover #Search_box_word{
 a:hover #Search_box{
     border: 2px #F48058 solid;
     background-color: #F48058;
-    color: black !important;
+    color: #252525 !important;
 }
 
 .Scan {
@@ -157,24 +157,25 @@ a:hover #Scan_box_word{
 }
 
 a:hover #Scan_box{
-    border: 2px black solid;
-    background-color: black;
+    border: 2px #252525 solid;
+    background-color: #252525;
     color: #F48058;
 }
 
 /****************/
 /* Search Page */
 
+
 #search_img{
     height: 150px !important;
     width: auto !important;
-    float: center;
     display: inline-block;
     width: 70%;
 }
 
 #search_result{
-    float: center;
+    text-align: center;
+    vertical-align: middle;
     display: inline-block;
     width: 30%;
 }
@@ -182,7 +183,8 @@ a:hover #Scan_box{
 #searchs{
     width: 100%;
     display: block;
-    height: 50%;
+    height: 50% !important;
+
 }
 
 #extra_space{
