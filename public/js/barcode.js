@@ -88,7 +88,7 @@
 	Quagga.onDetected(function(result) {    		
 		if (result.codeResult.code){
 			$('#txtSearch').val(result.codeResult.code);
-			$('.InputField').val(result.codeResult.code);
+			//$('.InputField').val(result.codeResult.code);
 			//$.get(walmartAPI, getProduct);
 			//document.getElementById('upc_api').href = "http://api.walmartlabs.com/v1/items?apiKey=s4wxvhdxmf7m5ktwxjm6hxr8&upc=" + result.codeResult.code;
 			Quagga.stop();	
