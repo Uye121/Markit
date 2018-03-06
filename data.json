@@ -19,7 +19,7 @@
 			"category": "cereal",
 			"price": "3.50",
 			"brand": "General Mills",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0132002701730",
@@ -41,7 +41,7 @@
 			"category": "cereal",
 			"price": "4.00",
 			"brand": "General Mills",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0036000291452",
@@ -63,7 +63,7 @@
 			"category": "cereal",
 			"price": "4.56",
 			"brand": "Kellogg's",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0725272730706",
@@ -84,7 +84,7 @@
 			"category": "cereal",
 			"price": "3.52",
 			"brand": "Kellogg's",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0123456789012",
@@ -106,7 +106,7 @@
 			"category": "cereal",
 			"price": "3.50",
 			"brand": "Kellogg's",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "5012345678900",
@@ -128,7 +128,7 @@
 			"category": "cereal",
 			"price": "4.08",
 			"brand": "General Mills",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "9771234567003",
@@ -150,7 +150,7 @@
 			"category": "cereal",
 			"price": "4.95",
 			"brand": "Post",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0701197952225",
@@ -172,7 +172,7 @@
 			"category": "cereal",
 			"price": "3.78",
 			"brand": "WWE",
-			"revImage": "../Images/2outof5.png"
+			"revImage": "images/2outof5.png"
 		},
 		{
 			"barcode": "0671860013624",
@@ -194,7 +194,7 @@
 			"category": "cereal",
 			"price": "11.99",
 			"brand": "Poop Like A Champion",
-			"revImage": "../Images/3outof5.png"
+			"revImage": "images/3outof5.png"
 		},
 		{
 			"barcode": "0130018701368",
@@ -216,7 +216,7 @@
 			"category": "cereal",
 			"price": "3.99",
 			"brand": "Quaker",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0725272730706",
@@ -238,7 +238,7 @@
 			"category": "cereal",
 			"price": "2.50",
 			"brand": "General Mills",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0614141000036",
@@ -260,7 +260,7 @@
 			"category": "cereal",
 			"price": "2.99",
 			"brand": "Quaker",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "5012345678900",
@@ -282,7 +282,7 @@
 			"category": "cereal",
 			"price": "10.32",
 			"brand": "Kellogg's",
-			"revImage": "../Images/3outof5.png"
+			"revImage": "images/3outof5.png"
 		},
 		{
 			"barcode": "8901072002478",
@@ -304,7 +304,7 @@
 			"category": "cereal",
 			"price": "2.96",
 			"brand": "General Mills",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0125002741350",
@@ -326,7 +326,7 @@
 			"category": "cereal",
 			"price": "3.99",
 			"brand": "Kellogg's",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "6000980911046",
@@ -348,7 +348,7 @@
 			"category": "cereal",
 			"price": "3.29",
 			"brand": "Envirokidz",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0365813216087",
@@ -370,7 +370,7 @@
 			"category": "cereal",
 			"price": "3.64",
 			"brand": "General Mills",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "9788679912077",
@@ -392,7 +392,7 @@
 			"category": "cereal",
 			"price": "2.79",
 			"brand": "Kellogg's",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 		},
 		{
 			"barcode": "0987654321098",
@@ -414,7 +414,7 @@
 			"category": "cereal",
 			"price": "2.50",
 			"brand": "Quaker",
-			"revImage": "../Images/4outof5.png"
+			"revImage": "images/4outof5.png"
 
 		},
 		{
@@ -437,7 +437,7 @@
 			"category": "cereal",
 			"price": "3.19",
 			"brand": "Kellogg's",
-			"revImage": "../Images/3outof5.png"
+			"revImage": "images/3outof5.png"
 		}
 	],
 	"searchFound": "",
