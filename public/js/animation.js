@@ -22,6 +22,15 @@ function initializePage() {
     	$(this).css('background', 'white')
     });
 
+    $('.name').click(function() {
+        var projName = $(this).closest('.name').attr('id');
+        if(projName.style.display === "none") {
+            projName.hide();
+        } else {
+            projName.show();
+        }
+    });
+
     // Start A/B tracking after animation
     track();
 }
