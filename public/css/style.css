@@ -18,6 +18,10 @@ html, body {
     height: 100%;
 }
 
+.clr {
+    clear: both;
+}
+
 .container{
     margin: auto !important;
     padding:0 !important;
@@ -188,11 +192,21 @@ a:hover #Scan_box{
     width: 30%;
 }
 
-#searchs{
+.searchs{
     width: 100%;
     display: block;
-    height: 50% !important;
+    height: 33.3% !important;
+    font-size: 4.5vw;
+    text-align: left;
+}
 
+#reviewimgs{
+    max-width: 100%;
+}
+
+#reviews{
+    font-size: 3vw;
+    text-align: left;
 }
 
 #extra_space{
