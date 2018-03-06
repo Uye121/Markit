@@ -17,4 +17,16 @@ function track() {
     $(".facebookLogin").click(function(e) {
         ga("send", "event", 'fblogin', 'click');
     });
+
+    $('.form-control').click(function() {
+        ga("send", "event", 'tap form', 'click');
+    });
+
+    $('.btn #submitBtn').click(function() {
+        ga("send", "event", 'submit barcode', 'click');
+    });
+
+    $('.scan_btn').click(function() {
+        ga("send", "event", 'start scan', 'click');
+    });
 }
