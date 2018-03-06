@@ -21,9 +21,9 @@
 		<form id="searchProduct" role="form" method="get" action="/search">
 			Enter product name, categories, or keywords<br>
 	    	<div class="form-group">
-	      	<input type="text" class="form-control" id="txtSearch" placeholder="Search..." name="txtSearch">
+	      	<input type="text" class="form-control" id="InputField" placeholder="Search..." name="txtSearch">
 	    	</div>
-	    	<input type="submit" id="submitBtn" class="btn btn-primary" value="Search"></input>
+	    	<input type="submit" id="submitBtn" class="btn" value="Search"></input>
 		</form>
 	</div>
 
@@ -39,7 +39,7 @@
 					{{name}}
 				</div>
 				<div id="searchs">
-					<img src="images/4outof5.png">
+					<img src="{{revImage}}">
 				</div>
 				<div id="reviews">
 					{{numRev}} Reviews
@@ -64,7 +64,7 @@
 				<li><a href="/index">Home</a></li>
 				<li><a href="/scan">Scan</a></li>
 				<li><a href="/search">Search</a></li>
-				<!--<li><a href="#">Help</a></li>-->
+				<li><a href="#">Help</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -72,6 +72,7 @@
 	<div class="search-results"></div>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/result.js"></script>
+	<script src="js/animation.js"></script>
 
 </body>
 </html>

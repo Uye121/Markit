@@ -15,16 +15,10 @@ function initializePage() {
         $('.login').show();
     });}, 1500);
 
-    $('#username').focus(function(){
-    	$(this).css('background', '#ffb79b')
+    $('#InputField').focus(function(){
+    	$(this).css('background', '#F48058')
     });
-    $('#username').blur(function(){
-    	$(this).css('background', 'white')
-    });
-	$('#password').focus(function(){
-    	$(this).css('background', '#ffb79b')
-    });
-    $('#password').blur(function(){
+    $('#InputField').blur(function(){
     	$(this).css('background', 'white')
     });
 
