@@ -20,15 +20,17 @@
 		</div>
 		<form id="searchCode" role="form" method="get" action="/scan">
 
+					<div class="input-group-btn2">
+			<button class="" id="scan_btn2" type="button" data-toggle="modal" data-target="#livestream_scanner">use the button to scan</button>
+		</div>
+
 		<div class="form-group">
 			<input type="text" id="txtSearch" class="form-control" placeholder="Enter Barcode Here..." name="txtSearch"/>
 		</div>
 
 		<input type="submit" id="submitBtn" class="btn" value="Search"></input>
 
-		<div class="input-group-btn">
-			<button class="" id="scan_btn" type="button" data-toggle="modal" data-target="#livestream_scanner">use the button to scan</button>
-		</div>
+
 
 		<div class="modal" id="livestream_scanner">
 			<div class="modal-dialog">

@@ -232,8 +232,21 @@ a:hover #Scan_box{
     color:white;
 }
 
+#scan_btn2{
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+    border-radius: 60%;
+    background-color: #F48058;
+    color:white;
+}
+
 .input-group-btn{
     padding: 10%;
+}
+
+.input-group-btn2{
+    padding: 3%;
 }
 
 #txtSearch{
