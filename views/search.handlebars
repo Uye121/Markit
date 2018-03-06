@@ -32,27 +32,28 @@
 	<div class="container">
 	{{#if searchFound}}
 		{{#each res}}
-		<div class="name">
+		<div class="name" id="{{barcode}}">
 			<img id="search_img"src="{{imageURL}}" class="img-responsive">
 			<div id="search_result">
-				<div id="searchs">
+				<div class="searchs">
 					{{name}}
 				</div>
-				<div id="searchs">
-					<img src="{{revImage}}">
+				<div class="searchs">
+					<img id="reviewimgs" src="{{revImage}}">
 				</div>
-				<div id="reviews">
+				<div class="searchs" id="reviews">
 					{{numRev}} Reviews
 					
 				</div>
 			</div>
 
-			<div class="detail" id="{{name}}">
-			{{#each review}}
-				<h1>{{title}}</h1>
-				<p>{{review}}</p>
-				<br>
-			{{/each}}
+			<div class="{{barcode}}" id="details">
+				<h1>Reviews:</h1>
+				{{#each review}}
+					<h3>{{title}}</h3>
+					<p>{{review}}</p>
+					<br>
+				{{/each}}
 			</div>
 			<br><br>
 		</div>

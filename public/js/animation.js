@@ -24,11 +24,8 @@ function initializePage() {
 
     $('.name').click(function() {
         var projName = $(this).closest('.name').attr('id');
-        if(projName.style.display === "none") {
-            projName.hide();
-        } else {
-            projName.show();
-        }
+        var concat = '.' +projName;
+        $(concat).toggle();
     });
 
     // Start A/B tracking after animation

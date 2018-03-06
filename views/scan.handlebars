@@ -61,7 +61,33 @@
 
 		{{#if scanFound}}
 			{{#each scanRes}}
-				<div class="name">
+			<div class="name" id="{{barcode}}">
+			<img id="search_img"src="{{imageURL}}" class="img-responsive">
+			<div id="search_result">
+				<div class="searchs">
+					{{name}}
+				</div>
+				<div class="searchs">
+					<img id="reviewimgs" src="{{revImage}}">
+				</div>
+				<div class="searchs" id="reviews">
+					{{numRev}} Reviews
+					
+				</div>
+			</div>
+
+			<div class="{{barcode}}" id="details">
+				<h1>Reviews:</h1>
+				{{#each review}}
+					<h3>{{title}}</h3>
+					<p>{{review}}</p>
+					<br>
+				{{/each}}
+			</div>
+			<br><br>
+		</div>
+		<!--
+				<div class="name" >
 					<img src="{{imageURL}}" class="img-responsive">
 					<h3>{{name}}</h3>
 					<h1>rating: {{rating}}</h1>
@@ -69,7 +95,7 @@
 						<h1>{{title}}</h1>
 						<p>{{review}}</p>
 					{{/each}}
-				</div>
+				</div>-->
 			{{/each}}
 		{{else}}
 			{{#if scanInit}}

@@ -18,6 +18,10 @@ html, body {
     height: 100%;
 }
 
+p{
+    padding: 0px 20px;
+}
+
 .clr {
     clear: both;
 }
@@ -177,6 +181,9 @@ a:hover #Scan_box{
 /****************/
 /* Search Page */
 
+#details{
+    display: none;
+}
 
 #search_img{
     height: 150px !important;
