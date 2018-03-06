@@ -224,14 +224,16 @@ a:hover #Scan_box{
 /* Scan Page */
 
 #scan_btn{
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 250px;
+    max-width: 100%;
     border-radius: 40%;
     background-color: #F48058;
+    color:white;
 }
 
 .input-group-btn{
-    padding-top: 25%;
+    padding: 10%;
 }
 
 #txtSearch{
@@ -244,6 +246,14 @@ a:hover #Scan_box{
     background-color:#F48058;
     position: fixed;
     bottom: 0%;
+}
+
+#navbar a:hover{
+    color: #252525;
+}
+
+#navbar a:active{
+    color: #252525;
 }
 
 #navbar a{
