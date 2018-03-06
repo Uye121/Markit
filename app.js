@@ -16,6 +16,7 @@ var scan = require('./routes/scan');
 var review = require('./routes/review');
 var search_result = require('./routes/search_result');
 var log_in = require('./routes/log_in');
+var about = require('./routes/about')
 
 var app = express();
 
@@ -47,6 +48,7 @@ app.get('/scan', scan.view);
 app.get('/review', review.view);
 app.get('/search_result', search_result.view);
 app.get('/', log_in.view);
+app.get('/about', about.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

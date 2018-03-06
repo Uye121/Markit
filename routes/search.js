@@ -15,7 +15,12 @@ exports.view = function(req, res){
 		keyWord = keyWord.toLowerCase();
 		for(i=0; i<data.list.length; i++) {
 			var item = data.list[i];
-			if(item.name.toLowerCase().indexOf(keyWord) > 0 || item.brand.toLowerCase().indexOf(keyWord) > 0 || item.category.toLowerCase().indexOf(keyWord) > 0) {
+			if(item.name.toLowerCase().indexOf(keyWord) >= 0 || item.brand.toLowerCase().indexOf(keyWord) >= 0 || item.category.toLowerCase().indexOf(keyWord) >= 0) {
+				console.log(item.name);
+				console.log(item.name.toLowerCase().indexOf(keyWord));
+				console.log(item.brand.toLowerCase().indexOf(keyWord));
+				console.log(item.category.toLowerCase().indexOf(keyWord));
+				console.log("\n");
 				data.res.push(item);
 			}
 		}
