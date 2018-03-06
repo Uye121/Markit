@@ -65,6 +65,10 @@
 					<img src="{{imageURL}}" class="img-responsive">
 					<h3>{{name}}</h3>
 					<h1>rating: {{rating}}</h1>
+					{{#each review}}
+						<h1>{{title}}</h1>
+						<p>{{review}}</p>
+					{{/each}}
 				</div>
 			{{/each}}
 		{{else}}
