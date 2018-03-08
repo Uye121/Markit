@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	//$('.login').hide();
-
+    var toShow = 1;
     $('.loading_image').click(fade);
 
     setTimeout(function(){$('.loading_image').fadeOut(1000, function(){
@@ -24,10 +24,18 @@ function initializePage() {
     	$(this).css('background', 'white');
     });
 
-    $('.name').click(function() {
+    $('.name').click(function(e) {
+        e.preventDefault();
         var projName = $(this).closest('.name').attr('id');
         var concat = '.' +projName;
-        $(concat).toggle();
+        if(toShow){
+           $(concat).show();
+           toShow = 0;
+        }
+        else{
+            $(concat).hide();
+            toShow = 1;
+        }
     });
 
     /*
