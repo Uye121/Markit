@@ -18,10 +18,10 @@ function initializePage() {
     });}, 1500);
 
     $('#InputField').focus(function(){
-    	$(this).css('background', '#F48058')
+    	$(this).css('background', '#F48058');
     });
     $('#InputField').blur(function(){
-    	$(this).css('background', 'white')
+    	$(this).css('background', 'white');
     });
 
     $('.name').click(function() {
@@ -30,11 +30,13 @@ function initializePage() {
         $(concat).toggle();
     });
 
-    $('#submitBtn').click(function(e){
+    /*
+    $('#searchstyle').click(function(e){
         e.preventDefault();
         $('#brs').hide();
-        console.log("hello word");
+        $('#submitBtn').css({"width": "25vw", "height": "10vh", "font-size": "5vw"});
     });
+   */ 
 
     // Start A/B tracking after animation
     track();
