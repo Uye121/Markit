@@ -39,7 +39,7 @@ function initializePage() {
    */ 
 
     // Start A/B tracking after animation
-    track();
+    //track();
 }
 
 function fade(e) {

@@ -35,14 +35,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<form id="searchCode" role="form" method="get" action="/scan2">
 
 					<div class="input-group-btn2">
-			<button class="" id="scan_btn2" type="button" data-toggle="modal" data-target="#livestream_scanner" onclick="track()">tap to scan</button>
+			<button class="" id="scan_btn2" type="button" data-toggle="modal" data-target="#livestream_scanner" onclick="trackScan()">tap to scan</button>
 		</div>
 
 		<div class="form-group">
-			<input type="text" id="txtSearch" class="form-control" placeholder="Enter Barcode Here..." name="txtSearch" onclick="track()"/>
+			<input type="text" id="txtSearch" class="form-control" placeholder="Enter Barcode Here..." name="txtSearch" onclick="trackForm()"/>
 		</div>
 
-		<input type="submit" id="submitBtn" class="btn" value="Search" onclick="track()"></input>
+		<input type="submit" id="submitBtn" class="btn" value="Search" onclick="trackSubmit()"></input>
 
 
 
