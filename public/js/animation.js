@@ -10,7 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.login').hide();
+
     $('.loading_image').click(fade);
+
     setTimeout(function(){$('.loading_image').fadeOut(1000, function(){
         $('.login').show();
     });}, 1500);
