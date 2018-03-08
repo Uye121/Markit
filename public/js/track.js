@@ -33,4 +33,9 @@ function track() {
         console.log("start scan");
         ga("send", "event", 'start scan', 'click');
     });
+
+    $(".scan_btn2").click(function() {
+        console.log("start scan2");
+        ga("send", "event", 'start scan', 'click');
+    });
 }
