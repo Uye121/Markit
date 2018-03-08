@@ -9,7 +9,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$('.login').hide();
+	//$('.login').hide();
 
     $('.loading_image').click(fade);
 
