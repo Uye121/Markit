@@ -28,6 +28,12 @@ function initializePage() {
         $(concat).toggle();
     });
 
+    $('#submitBtn').click(function(e){
+        e.preventDefault();
+        $('#brs').hide();
+        console.log("hello word");
+    });
+
     // Start A/B tracking after animation
     track();
 }

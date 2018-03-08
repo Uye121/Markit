@@ -38,6 +38,8 @@ p{
 .btn{
     background-color: #F48058;
     color: white;
+    height: 15vh;
+    width: 30vw;
 }
 
 /****************/
