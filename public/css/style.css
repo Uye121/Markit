@@ -130,11 +130,12 @@ a.home{
 }
 
 .Scan{
-    font-size: 15vh;
+    font-size: 10vh;
     padding: 5vh 10vw;
     width: 100%;
     height: 50%;
-    text-align: block;
+    text-align: center;
+    vertical-align: middle;
     background-color: #F48058;
 }
 
@@ -143,7 +144,7 @@ a:hover #Scan_box_word{
 }
 
 #Scan_box_word{
-    padding-top: 5vh;
+    padding-top: 8vh;
     font-size: 10vw;
 }
 
@@ -270,7 +271,7 @@ a:hover #Search_box{
 #txtSearch{
     background-color: #252525;
     border-color: #252525; 
-    colo:white;
+    color:white;
     width:50%;
     text-align: center;
     display: inline-block;
@@ -309,7 +310,6 @@ a:hover #Search_box{
 
 #navbar li:nth-child(1){
     font-size: 7vw !important;
-    padding-right:10px !important;
 }
 
 #navbar li:nth-child(2){
