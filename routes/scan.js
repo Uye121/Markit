@@ -21,6 +21,10 @@ exports.view = function(req, res){
       for(i=0; i<data.list.length; i++) {
         var barcode = data.list[i].barcode;
         if(code == barcode) {
+          if(i == 0)
+            data.scanRes.push(data.list[1]);
+          else if(i == 1)
+            data.scanRes.push(data.list[0]);
           data.scanRes.push(data.list[i]);
           data.scanFound=true;
         }
