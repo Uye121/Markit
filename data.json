@@ -15,11 +15,11 @@
         }
 			],
 			"numRev": "2",
-			"rating": "4",
+			"rating": "5",
 			"category": "cereal",
 			"price": "3.50",
 			"brand": "General Mills",
-			"revImage": "images/4outof5.png"
+			"revImage": "images/5outof5.png"
 		},
 		{
 			"barcode": "0741360988644",
@@ -32,16 +32,16 @@
           "review": "I mean... they're ok."
         },
         {
-          "title": "Five Stars",
-          "review": "Yep. cheerios."
+          "title": "One Stars",
+          "review": "Taste meh."
         }
 			],
 			"numRev": "2",
-			"rating": "4",
+			"rating": "1",
 			"category": "cereal",
 			"price": "4.00",
 			"brand": "General Mills",
-			"revImage": "images/4outof5.png"
+			"revImage": "images/1outof5.png"
 		},
 		{
 			"barcode": "0854236001191",
