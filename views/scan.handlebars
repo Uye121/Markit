@@ -34,7 +34,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		</div>
 		<form id="searchCode" role="form" method="get" action="/scan">
 
-<div class="input-group-btn">
+		<div class="input-group-btn">
 			<button class="" id="scan_btn2" type="button" data-toggle="modal" data-target="#livestream_scanner" onclick="trackScan()">tap to scan</button>
 		</div>
 
@@ -42,9 +42,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<input type="text" id="txtSearch" class="form-control" placeholder="Enter Barcode Here..." name="txtSearch" onclick="trackForm()"/>
 		</div>
 
-		<input type="submit" id="submitBtn" class="btn" value="Search" onclick="trackSubmit()"></input>
+		<input type="submit" id="submitBtn" class="btn" value="Submit" onclick="trackSubmit()"></input>
 
-		
+		<br>
 
 		<div class="modal" id="livestream_scanner">
 			<div class="modal-dialog">
@@ -122,10 +122,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 		<div class="container">
 			<nav id="navbar">
+				<a href="/search">
 				<ul>
-					<li><a href="/search">Search</a></li>
+					<li>Search</li>
 					<!--<li><a href="/about">About</a></li>-->
 				</ul>
+				</a>
 			</nav>
 		</div>
 
