@@ -22,6 +22,11 @@ p{
     padding: 0px 20px;
 }
 
+a #MarkIt_Image{
+    text-decoration: none;
+    color:white;
+}
+
 .clr {
     clear: both;
 }
@@ -165,6 +170,7 @@ a:hover #Search_box_word{
 }
 
 #Search_box_word{
+    padding-top: 10vh;
     font-size: 10vw;
 }
 
@@ -189,6 +195,7 @@ a:hover #Search_box{
 #details{
     display: none;
 }
+
 
 #search_img{
     height: 150px !important;

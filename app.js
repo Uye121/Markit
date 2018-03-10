@@ -16,7 +16,8 @@ var scan = require('./routes/scan');
 var review = require('./routes/review');
 var search_result = require('./routes/search_result');
 var log_in = require('./routes/log_in');
-var about = require('./routes/about')
+var about = require('./routes/about');
+var loading = require('./routes/loading');
 
 var app = express();
 
@@ -40,14 +41,14 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-//app.get('/index', index.view);
+app.get('/index', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/search', search.view);
 app.get('/scan', scan.view);
 app.get('/review', review.view);
 app.get('/search_result', search_result.view);
-app.get('/', index.view);
+app.get('/', loading.view);
 app.get('/about', about.view);
 app.get('/scan2', scan.view2);
 

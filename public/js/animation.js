@@ -14,7 +14,7 @@ function initializePage() {
     $('.loading_image').click(fade);
 
     setTimeout(function(){$('.loading_image').fadeOut(1000, function(){
-        $('.login').show();
+        window.location.href = "./index";
     });}, 1500);
 
     $('#InputField').focus(function(){
@@ -53,7 +53,7 @@ function initializePage() {
 function fade(e) {
     e.preventDefault();
 	$('.loading_image').fadeOut(1000, function(){
-		$('.login').show();
+		window.location.href = "./index";
 	});
 }
 
